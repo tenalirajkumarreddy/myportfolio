@@ -1,48 +1,17 @@
 import React from 'react';
-import { ExternalLink, Github } from 'lucide-react';
+import { ExternalLink, Github, ArrowRight } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import { ScrollReveal } from './ScrollReveal';
+import { getFeaturedProjects } from '../data/projects';
 
 export const Projects: React.FC = () => {
-  const projects = [
-    {
-      title: "E-Commerce Platform",
-      description: "Full-stack web application built with React, Node.js, and MongoDB. Features include user authentication, shopping cart, and payment integration.",
-      image: "https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg?auto=compress&cs=tinysrgb&w=800",
-      technologies: ["React", "Node.js", "MongoDB", "Stripe"],
-      demoUrl: "#",
-      githubUrl: "#"
-    },
-    {
-      title: "AI Task Manager",
-      description: "Intelligent task management system using machine learning to prioritize tasks and predict completion times. Built with Python and TensorFlow.",
-      image: "https://images.pexels.com/photos/590016/pexels-photo-590016.jpeg?auto=compress&cs=tinysrgb&w=800",
-      technologies: ["Python", "TensorFlow", "Flask", "PostgreSQL"],
-      demoUrl: "#",
-      githubUrl: "#"
-    },
-    {
-      title: "Social Media Dashboard",
-      description: "React-based analytics dashboard for social media management. Includes real-time data visualization and automated reporting features.",
-      image: "https://images.pexels.com/photos/265087/pexels-photo-265087.jpeg?auto=compress&cs=tinysrgb&w=800",
-      technologies: ["React", "D3.js", "Express", "Socket.io"],
-      demoUrl: "#",
-      githubUrl: "#"
-    },
-    {
-      title: "Mobile Fitness App",
-      description: "Cross-platform mobile app for fitness tracking and workout planning. Features include progress tracking and social challenges.",
-      image: "https://images.pexels.com/photos/841130/pexels-photo-841130.jpeg?auto=compress&cs=tinysrgb&w=800",
-      technologies: ["React Native", "Firebase", "Redux", "Chart.js"],
-      demoUrl: "#",
-      githubUrl: "#"
-    }
-  ];
+  const projects = getFeaturedProjects();
 
   return (
-    <section id="projects" className="py-20 bg-gray-50 relative">
+    <section id="projects" className="py-20 bg-gray-50 relative transition-colors duration-300">
       <div className="container mx-auto px-6">
         <ScrollReveal>
-          <h2 className="text-4xl font-bold text-center text-gray-800 mb-16">Featured Projects</h2>
+          <h2 className="text-4xl font-bold text-center text-gray-800 mb-16 transition-colors duration-300">Featured Projects</h2>
         </ScrollReveal>
         
         <div className="grid md:grid-cols-2 gap-8">
@@ -57,18 +26,24 @@ export const Projects: React.FC = () => {
                   />
                   <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                     <div className="flex gap-4">
-                      <a 
-                        href={project.demoUrl}
+                      <Link 
+                        to={`/project/${project.id}`}
                         className="bg-white/20 backdrop-blur-sm text-white p-3 rounded-full hover:bg-white/30 transition-colors duration-300"
+                        title="View Details"
                       >
                         <ExternalLink size={20} />
-                      </a>
-                      <a 
-                        href={project.githubUrl}
-                        className="bg-white/20 backdrop-blur-sm text-white p-3 rounded-full hover:bg-white/30 transition-colors duration-300"
-                      >
-                        <Github size={20} />
-                      </a>
+                      </Link>
+                      {project.githubUrl && (
+                        <a 
+                          href={project.githubUrl}
+                          className="bg-white/20 backdrop-blur-sm text-white p-3 rounded-full hover:bg-white/30 transition-colors duration-300"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          title="View Source Code"
+                        >
+                          <Github size={20} />
+                        </a>
+                      )}
                     </div>
                   </div>
                 </div>
@@ -92,6 +67,19 @@ export const Projects: React.FC = () => {
             </ScrollReveal>
           ))}
         </div>
+
+        {/* View All Projects Button */}
+        <ScrollReveal delay={800}>
+          <div className="text-center mt-12">
+            <Link
+              to="/projects"
+              className="inline-flex items-center gap-2 bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-all duration-300 hover:scale-105 shadow-lg"
+            >
+              View All Projects
+              <ArrowRight size={20} />
+            </Link>
+          </div>
+        </ScrollReveal>
       </div>
     </section>
   );

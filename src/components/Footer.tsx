@@ -1,5 +1,5 @@
 import React from 'react';
-import { Github, Linkedin, Twitter, Heart } from 'lucide-react';
+import { Github, Linkedin, Twitter } from 'lucide-react';
 
 export const Footer: React.FC = () => {
   return (
@@ -40,9 +40,7 @@ export const Footer: React.FC = () => {
         </div>
         
         <div className="border-t border-gray-800 mt-8 pt-8 text-center">
-          <p className="text-gray-400 flex items-center justify-center gap-2">
-            Made with <Heart size={16} className="text-red-500" /> by Raj Kumar Reddy Tenali
-            <span className="mx-2">•</span>
+          <p className="text-gray-400">
             © 2025 All rights reserved
           </p>
         </div>
