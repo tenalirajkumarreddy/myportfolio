@@ -1,6 +1,6 @@
 # Raj Kumar Reddy Tenali - Portfolio
 
-A modern, responsive portfolio website showcasing my skills, projects, and achievements as a Computer Science student at VIT AP University.
+A modern, responsive portfolio website showcasing my skills, projects, and achievements as a Computer Science student at VIT AP University..
 
 ## About Me
 
