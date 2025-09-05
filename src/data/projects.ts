@@ -23,6 +23,61 @@ export interface Project {
 export const projectsData: Project[] = [
   // Featured Projects
   {
+    id: 'my-billmate',
+    title: 'My BillMate',
+    description: 'Comprehensive full-stack billing and route management system for distribution businesses with real-time analytics, multi-payment support, and mobile-optimized agent interface.',
+    longDescription: 'My BillMate is a complete digital transformation solution for distribution businesses, designed to replace traditional paper-based route management with a modern, efficient system. The application serves businesses like FMCG distributors, milk delivery services, and wholesale distributors who need to manage route-based deliveries, agent performance, and customer billing.\n\nThe system features a dual-interface design: an admin dashboard for business owners to manage routes, assign agents, track performance, and analyze business metrics; and a mobile-optimized agent interface for field operations including customer billing, invoice generation, and payment collection.\n\nKey Features:\n• **Route Management**: Create delivery routes, assign agents, track real-time progress\n• **Multi-Payment Billing**: Support for cash, UPI, credit, and mixed payments\n• **Real-time Analytics**: Live dashboard with business metrics and performance tracking\n• **Invoice Generation**: Automatic invoice creation with unique numbers and payment tracking\n• **Customer Management**: Comprehensive customer database with credit and outstanding tracking\n• **Inventory Management**: Product catalog with real-time stock updates\n• **Mobile-First Design**: Optimized for field agents with offline capability\n• **Comprehensive Reporting**: Detailed analytics with drill-down capabilities\n\nThe application handles the complete business workflow from morning route assignments to end-of-day performance analysis, providing complete visibility and control over distribution operations. Built with React 18, TypeScript, Supabase, and Tailwind CSS for a modern, scalable solution.',
+    image: 'https://images.pexels.com/photos/5632402/pexels-photo-5632402.jpeg?auto=compress&cs=tinysrgb&w=800',
+    technologies: ['React 18', 'TypeScript', 'Vite', 'Supabase', 'PostgreSQL', 'Tailwind CSS', 'shadcn/ui', 'React Router DOM', 'Context API'],
+    category: 'web',
+    status: 'completed',
+    demoUrl: 'https://lovable.dev/projects/c4b8cde0-449e-40a4-914b-9a4674676cf4',
+    githubUrl: '#',
+    featured: true,
+    date: '2024-09',
+    contributions: [
+      {
+        contributor: 'Raj Kumar Reddy Tenali',
+        percentage: 85,
+        tasks: [
+          'Conceptualized complete distribution business management system architecture',
+          'Designed comprehensive business workflow from route assignment to performance analysis',
+          'Planned dual-interface system (Admin dashboard + Mobile agent interface)',
+          'Designed multi-payment billing system supporting cash, UPI, credit, and mixed payments',
+          'Architected real-time analytics and reporting system with drill-down capabilities',
+          'Planned mobile-first responsive design strategy for field agents',
+          'Designed role-based access control and security implementation',
+          'Created comprehensive feature specifications and user experience flows',
+          'Managed product development lifecycle and implementation strategy',
+          'Designed invoice generation system with automatic numbering and payment tracking',
+          'Planned offline capability and real-time sync architecture'
+        ]
+      },
+      {
+        contributor: 'AI Assistance (GPT)',
+        percentage: 10,
+        tasks: [
+          'Generated React TypeScript components based on specifications',
+          'Implemented Supabase database queries and real-time subscriptions',
+          'Created responsive Tailwind CSS layouts and styling',
+          'Developed Context API state management patterns',
+          'Implemented form validation and error handling logic',
+          'Generated utility functions for data processing and calculations'
+        ]
+      },
+      {
+        contributor: 'Bolt.new (AI Frontend)',
+        percentage: 5,
+        tasks: [
+          'Assisted with shadcn/ui component integration and styling',
+          'Generated responsive layout components and mobile optimizations',
+          'Created interactive UI elements and navigation components',
+          'Implemented chart components for analytics dashboard'
+        ]
+      }
+    ]
+  },
+  {
     id: 'eapcet-rank-prediction',
     title: 'EAPCET Rank Prediction using Machine Learning',
     description: 'ML-based system that predicts engineering college admission chances for EAPCET exam candidates using linear regression and decision trees with 85%+ accuracy.',
