@@ -11,7 +11,7 @@ export interface Project {
   longDescription: string;
   image: string;
   technologies: string[];
-  category: 'web' | 'mobile' | 'ai' | 'data' | 'other';
+  category: 'web' | 'mobile' | 'ai' | 'data' | 'other' | 'vibe-coding';
   status: 'completed' | 'in-progress' | 'planned';
   demoUrl?: string;
   githubUrl?: string;
@@ -73,6 +73,62 @@ export const projectsData: Project[] = [
           'Generated responsive layout components and mobile optimizations',
           'Created interactive UI elements and navigation components',
           'Implemented chart components for analytics dashboard'
+        ]
+      }
+    ]
+  },
+  {
+    id: 'orato-ai',
+    title: 'Orato AI',
+    description: 'AI-powered English speaking platform with advanced speech recognition, multi-provider AI integration, and intelligent interview simulation for language learning and professional development.',
+    longDescription: 'Orato AI is a cutting-edge, AI-powered English speaking platform designed to revolutionize language learning and interview preparation. The platform combines advanced speech recognition, natural language processing, and multiple AI providers to create an immersive learning experience.\n\nThe application features real-time speech-to-text conversion, AI-powered conversations with context-aware responses, and a comprehensive interview simulation system. Users can upload their resumes, receive AI-generated interview questions, and get detailed performance feedback with professional reports.\n\nKey Features:\n• Advanced Speech Recognition: Real-time voice-to-text with Web Speech API\n• Multi-Provider AI Integration: Support for OpenAI, Anthropic, DeepSeek, OpenRouter, and Perplexity\n• Smart Interview Simulator: Resume analysis, dynamic question generation, and professional scoring\n• Real-time Feedback: Instant pronunciation, fluency, and content analysis\n• Natural Conversations: Context-aware AI responses with grammar and vocabulary corrections\n• Professional Reports: Detailed competency scoring and improvement recommendations\n• Modern UI/UX: Responsive design with accessibility-first approach\n• Progress Tracking: Monitor improvement over time with detailed analytics\n\nHow to Use:\n1. Visit the platform and create your account or start as a guest user\n2. Choose your preferred AI provider and model from 5 different services (OpenAI, Anthropic, DeepSeek, OpenRouter, Perplexity)\n3. Select your learning mode: Practice Conversations or Interview Simulation\n4. For conversations: Start speaking and engage in natural dialogue with AI feedback\n5. For interviews: Upload your resume, select job role, and begin AI-generated interview questions\n6. Speak your responses naturally - the platform provides real-time speech recognition\n7. Receive instant feedback on pronunciation, fluency, grammar, and content quality\n8. Review detailed performance reports with competency scores and improvement suggestions\n9. Track your progress over time and adjust difficulty levels as you improve\n10. Use voice commands for hands-free interaction and seamless conversation flow\n\nThe platform supports 20+ AI models across 5 different providers, allowing users to choose the best AI for their learning needs. With features like continuous conversation mode, voice commands, and personalized learning paths, Orato AI provides a comprehensive solution for English language mastery and interview preparation.',
+    image: 'https://images.pexels.com/photos/5428836/pexels-photo-5428836.jpeg?auto=compress&cs=tinysrgb&w=800',
+    technologies: ['React 18', 'TypeScript', 'Vite', 'Tailwind CSS', 'shadcn/ui', 'Web Speech API', 'OpenAI API', 'Anthropic Claude', 'DeepSeek', 'OpenRouter', 'Perplexity'],
+    category: 'vibe-coding',
+    status: 'completed',
+    demoUrl: 'https://oratoai.netlify.app/',
+    githubUrl: 'https://github.com/tenalirajkumarreddy/OratoAI.git',
+    featured: true,
+    date: '2024-10',
+    contributions: [
+      {
+        contributor: 'Raj Kumar Reddy Tenali',
+        percentage: 75,
+        tasks: [
+          'Conceptualized AI-powered English learning platform architecture',
+          'Designed multi-provider AI integration strategy supporting 5 different AI services',
+          'Planned intelligent interview simulation system with resume analysis',
+          'Created comprehensive speech recognition and synthesis workflow',
+          'Designed real-time feedback system for pronunciation and fluency analysis',
+          'Architected professional report generation with competency scoring',
+          'Planned user experience flows for conversation mode and interview practice',
+          'Designed progress tracking and personalized learning path algorithms',
+          'Created feature specifications for voice commands and accessibility',
+          'Managed product development lifecycle and AI model selection strategy',
+          'Designed responsive UI/UX requirements for modern web platform'
+        ]
+      },
+      {
+        contributor: 'AI Assistance (GPT)',
+        percentage: 15,
+        tasks: [
+          'Generated React TypeScript components for speech recognition integration',
+          'Implemented multi-provider AI API integration logic',
+          'Created real-time speech processing and analysis algorithms',
+          'Developed conversation state management and context handling',
+          'Implemented report generation and scoring calculation functions',
+          'Generated utility functions for audio processing and speech synthesis'
+        ]
+      },
+      {
+        contributor: 'Lovable.dev (AI Frontend)',
+        percentage: 10,
+        tasks: [
+          'Created responsive UI components with shadcn/ui integration',
+          'Implemented modern design system with Tailwind CSS',
+          'Built accessible interface components for speech interaction',
+          'Generated professional dashboard layouts and navigation',
+          'Created responsive design for mobile and desktop platforms'
         ]
       }
     ]

@@ -7,6 +7,7 @@ import { ScrollReveal } from '../components/ScrollReveal';
 const categories = [
   { id: 'all', label: 'All Projects', count: projectsData.length },
   { id: 'web', label: 'Web Development', count: projectsData.filter(p => p.category === 'web').length },
+  { id: 'vibe-coding', label: 'Vibe Coding', count: projectsData.filter(p => p.category === 'vibe-coding').length },
   { id: 'mobile', label: 'Mobile Apps', count: projectsData.filter(p => p.category === 'mobile').length },
   { id: 'ai', label: 'AI/ML', count: projectsData.filter(p => p.category === 'ai').length },
   { id: 'data', label: 'Data Science', count: projectsData.filter(p => p.category === 'data').length },
@@ -171,7 +172,9 @@ export const AllProjects: React.FC = () => {
                   {/* Category Badge and View Details */}
                   <div className="flex justify-between items-center mb-4">
                     <span className="text-xs text-gray-500 font-medium uppercase tracking-wider">
-                      {project.category === 'ai' ? 'AI/ML' : project.category}
+                      {project.category === 'ai' ? 'AI/ML' : 
+                       project.category === 'vibe-coding' ? 'Vibe Coding' : 
+                       project.category}
                     </span>
                     {project.featured && (
                       <span className="bg-yellow-100 text-yellow-800 text-xs px-2 py-1 rounded-full font-medium">
