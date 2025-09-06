@@ -142,8 +142,8 @@ export const projectsData: Project[] = [
     technologies: ['React 18', 'TypeScript', 'Vite', 'Tailwind CSS', 'react-pdf', 'Zustand', 'React Context', 'Lucide React', 'ESLint'],
     category: 'web',
     status: 'completed',
-    demoUrl: '#',
-    githubUrl: '#',
+    demoUrl: 'https://mydoco.netlify.app/',
+    githubUrl: 'https://github.com/tenalirajkumarreddy/DOCO-PUBLIC.git',
     featured: true,
     date: '2024-11',
     contributions: [
