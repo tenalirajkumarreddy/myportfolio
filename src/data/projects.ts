@@ -134,6 +134,54 @@ export const projectsData: Project[] = [
     ]
   },
   {
+    id: 'doco',
+    title: 'DOCO',
+    description: 'Online one-stop destination for document management designed for students to organize subject-wise documents with seamless access and viewing from anywhere without downloads.',
+    longDescription: 'DOCO is a comprehensive document management platform specifically designed for students who need to organize and access their academic documents efficiently. The platform eliminates the hassle of downloading, organizing, and managing files locally by providing a centralized cloud-based solution where students can store, organize, and view documents from anywhere.\n\nThe main challenge DOCO solves is the common student problem of scattered documents across different devices and folders. Students often waste valuable time searching for specific notes, assignments, or study materials. DOCO provides subject-wise organization, instant document viewing, and seamless access across all devices, making academic life more organized and productive.\n\nKey Features:\n• Document Viewing: Advanced PDF viewer with zoom, rotation, and navigation controls\n• File Management: Upload, organize, and manage documents in customizable folders\n• Subject-wise Organization: Organize documents by subjects, courses, or custom categories\n• Cross-platform Access: Access documents from any device with internet connectivity\n• No Download Required: View documents directly in browser without local storage needs\n• Responsive Design: Optimized interface for desktop, tablet, and mobile devices\n• Modern UI/UX: Clean, professional interface designed for student productivity\n• Fast Search: Quickly find documents by name, subject, or category\n• Secure Storage: Safe and reliable document storage with backup protection\n• Time-saving Workflow: Streamlined process from upload to viewing\n\nHow to Use:\n1. Sign up or log into your DOCO account from any device\n2. Create subject folders or categories based on your academic needs\n3. Upload documents (PDFs, images, text files) to appropriate subject folders\n4. Organize documents with tags, names, and categories for easy retrieval\n5. Access your document library from anywhere using the web interface\n6. Use the built-in PDF viewer to read documents without downloading\n7. Navigate through pages using zoom, rotation, and viewing controls\n8. Search for specific documents using the search functionality\n9. Share documents with classmates or study groups when needed\n10. Maintain your organized digital library throughout your academic journey\n\nDOCO transforms the way students handle their academic documents, providing a professional, efficient, and accessible solution that saves time and reduces the stress of document management. Perfect for university students, researchers, and anyone who deals with multiple academic documents regularly.',
+    image: 'https://images.pexels.com/photos/7688336/pexels-photo-7688336.jpeg?auto=compress&cs=tinysrgb&w=800',
+    technologies: ['React 18', 'TypeScript', 'Vite', 'Tailwind CSS', 'react-pdf', 'Zustand', 'React Context', 'Lucide React', 'ESLint'],
+    category: 'web',
+    status: 'completed',
+    demoUrl: '#',
+    githubUrl: '#',
+    featured: true,
+    date: '2024-11',
+    contributions: [
+      {
+        contributor: 'Raj Kumar Reddy Tenali',
+        percentage: 70,
+        tasks: [
+          'Conceptualized document management platform specifically for student needs',
+          'Identified and analyzed the problem of scattered academic documents',
+          'Designed comprehensive solution for subject-wise document organization',
+          'Planned user experience workflow from upload to seamless viewing',
+          'Created feature specifications for cross-platform document access',
+          'Designed responsive interface requirements for multiple device types',
+          'Planned file management system with folder organization and search',
+          'Architected document viewing system without download requirements',
+          'Created project requirements and technical specifications',
+          'Managed product development lifecycle and feature prioritization',
+          'Designed user interface mockups and interaction patterns'
+        ]
+      },
+      {
+        contributor: 'Bolt.new (AI Frontend)',
+        percentage: 30,
+        tasks: [
+          'Generated React TypeScript components for document management',
+          'Implemented PDF viewing functionality with react-pdf integration',
+          'Created responsive UI components with Tailwind CSS styling',
+          'Developed file upload and folder management interfaces',
+          'Implemented state management with Zustand and React Context',
+          'Generated reusable UI components and navigation systems',
+          'Created professional design system and component architecture',
+          'Implemented document viewer controls (zoom, rotation, navigation)',
+          'Built responsive layouts for desktop and mobile platforms'
+        ]
+      }
+    ]
+  },
+  {
     id: 'eapcet-rank-prediction',
     title: 'EAPCET Rank Prediction using Machine Learning',
     description: 'ML-based system that predicts engineering college admission chances for EAPCET exam candidates using linear regression and decision trees with 85%+ accuracy.',
