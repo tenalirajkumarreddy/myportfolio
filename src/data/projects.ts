@@ -31,7 +31,7 @@ export const projectsData: Project[] = [
     technologies: ['React 18', 'TypeScript', 'Vite', 'Supabase', 'PostgreSQL', 'Tailwind CSS', 'shadcn/ui', 'React Router DOM', 'Context API'],
     category: 'web',
     status: 'completed',
-    demoUrl: 'https://lovable.dev/projects/c4b8cde0-449e-40a4-914b-9a4674676cf4',
+    demoUrl: 'https://mybillmate.netlify.app/',
     githubUrl: '#',
     featured: true,
     date: '2024-09',
